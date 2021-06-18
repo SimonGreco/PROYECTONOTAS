@@ -1,11 +1,10 @@
 let notas = require("../datos");
 let escribirJson = require("../escribirJson");
-let eliminarNotas = require("../EliminarNotas");
 const guardarTarea = require("../guardarJson");
-function modificarDatos(x,y){
- let tarea = notas.find(elemento=> elemento.tarea == x);
+function modificarDatos(y,z){
+ let tarea = notas.find(elemento=> elemento.tarea == y);
 
-   if(tarea != undefined){tarea.estado = y;
+   if(tarea != undefined){tarea.estado = z;
     guardarTarea(tarea);
     setTimeout(function(){
         notas.pop();

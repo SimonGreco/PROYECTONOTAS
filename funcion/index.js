@@ -4,7 +4,7 @@ const guardarTarea = require("../guardarJson");
 const eliminarTarea = require("../EliminarNotas");
 const cambiarTarea = require("../cambiarEstado");
 const array = require("../funcionesDeLaApp");
-array
+
 
 
 function hola(x, y, z) {
@@ -16,7 +16,7 @@ function hola(x, y, z) {
         })
             break
         case "crear": guardarTarea({
-            "tarea": y,
+            tarea: y,
             estado: "en proceso"
         });
         setTimeout(function(){hola("listar")});   
@@ -24,7 +24,6 @@ function hola(x, y, z) {
         case "filtrar": filtrarPorEstado(y);
             break
             case "eliminar": eliminarTarea(y);  
-            setTimeout(function(){console.log(notas)}, 3000);  
             break
             case "cambiarestado": cambiarTarea(y,z);
                             setTimeout(function(){hola("listar")});        
