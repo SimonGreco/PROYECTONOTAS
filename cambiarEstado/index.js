@@ -10,6 +10,6 @@ function modificarDatos(x,y){
     setTimeout(function(){
         notas.pop();
         escribirJson(notas);
-    })}else{return "no existe una tarea con ese nombre"}
+    })}else{console.log("no existe ninguna tarea con ese nombre")}
 }
 module.exports = modificarDatos
