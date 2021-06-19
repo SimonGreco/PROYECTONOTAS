@@ -11,7 +11,7 @@ function eliminar(datoABusca){
     return elemento.estado != datoABusca
 }))
 
-notasNoEliminadas.length == notas.length? console.log("no se encontro el elemento que querias eliminar"): escribirJson(notasNoEliminadas);
+notasNoEliminadas.length == notas.length? console.log("no se encontro el elemento que querias eliminar"): escribirJson(notasNoEliminadas);notasNoEliminadas.forEach(function(elemento){console.log(elemento)})
 
 
 };
