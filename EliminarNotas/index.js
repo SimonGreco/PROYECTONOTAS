@@ -16,3 +16,10 @@ notasNoEliminadas.length == notas.length? console.log("no se encontro el element
 
 };
 module.exports = eliminar;
+
+
+
+if(this.precioDeLosVendidos.length > 0){this.precioDeLosVendidos.reduce(function(acumulador, precioVendidos){
+    acumulador = acumulador + precioVendidos;
+    return acumulador
+})}else{return 0}
